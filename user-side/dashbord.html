@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+       
+
+        
+        .logosec .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .searchbar input,
+        .searchbar2 input {
+            padding: 5px;
+            width: 200px;
+            margin-right: 10px;
+        }
+
+        .searchbtn img {
+            width: 20px;
+            cursor: pointer;
+        }
+
+        .message {
+            display: flex;
+            align-items: center;
+        }
+
+        .message .circle {
+            width: 10px;
+            height: 10px;
+            background-color: red;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .message .dp img {
+            width: 40px;
+            border-radius: 50%;
+        }
+
+        .main-container {
+            display: flex;
+        }
+
+        .navcontainer {
+            width: 250px;
+            background-color: #0367f4;
+            height: 100vh;
+            color: white;
+        }
+
+        .nav {
+            padding: 20px;
+        }
+
+        .nav-upper-options {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .nav-option {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        .nav-option img {
+            width: 30px;
+            margin-right: 10px;
+        }
+
+        .main {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .box-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .box {
+            flex: 1;
+            padding: 20px;
+            margin-right: 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .box img {
+            width: 50px;
+            margin-top: 10px;
+        }
+
+        .report-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .report-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .report-body {
+            overflow-x: auto;
+        }
+
+        .student-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .student-table th,
+        .student-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .student-table th {
+            background-color: #03A9F4;
+            color: white;
+        }
+
+        .student-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .student-table tr:hover {
+            background-color: #ddd;
+        }
+
+        .student-table .modifier a{
+            color: rgb(4, 152, 4);
+        }
+
+        .student-table .supprimer a {
+            color: rgb(248, 16, 16);
+        }
+        .boxes {
+            display: flex;
+            justify-content: space-between;
+            width: 80%; /* Largeur de 80% de la fenêtre */
+        }
+
+        .box {
+            padding: 20px;
+            background-color: #72a212;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .box box2{
+            padding: 20px;
+            background-color: #8c07e5;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        }
+.box box3{
+            padding: 20px;
+            background-color: #09c3b4;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .box img {
+            width: 50px;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- for header part -->
+    
+
+    <div class="main-container">
+        <div class="navcontainer">
+            <nav class="nav">
+                <div class="nav-upper-options">
+                    <div class="nav-option option1">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210182148/Untitled-design-(29).png"
+                            class="nav-img" alt="dashboard">
+                        <h3>Dashboard</h3>
+                    </div>
+                    <div class="option2 nav-option">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183322/9.png"
+                            class="nav-img" alt="articles">
+                            <a href="listeEtudiants.php"
+                        >listes des etudiants </a>
+                       
+                        
+                    </div>
+                    <div class="nav-option option3">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183320/5.png"
+                            class="nav-img" alt="report">
+                            <a href="nouveauEtudiant.html"
+                        >ajouter etudiants</a>
+                    </div>
+                   
+                   
+                    
+                   
+                </div>
+            </nav>
+        </div>
+
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+
+           
+            
+            <!--<img src="images/profile.jpg" alt="">-->
+        </div>
+
+        <div class="dash-content">
+            <div class="overview">
+                
+
+                <div class="boxes">
+                    <div class="box box1">
+                        <i class="uil uil-thumbs-up"></i>
+                        <span class="text">Total Likes</span>
+                        <span class="number">50,120</span>
+                    </div>
+                    <div class="box box2">
+                        <i class="uil uil-comments"></i>
+                        <span class="text">Comments</span>
+                        <span class="number">20,120</span>
+                    </div>
+                    <div class="box box3">
+                        <i class="uil uil-share"></i>
+                        <span class="text">Total Share</span>
+                        <span class="number">10,120</span>
+                    </div>
+                </div>
+            </div>
+
+<!--           
+                <div class="title">
+                    <i class="uil uil-clock-three"></i>
+                    <span class="text">Actions</span> -->
+               
+                </div>
+                <!-- <a href="nouveauEtudiant.php"
+                class="btn-edit">Add Student</a>
+                <a href="modif.php"
+              class="btn-edit">Edit Student</a>
+              <a href="supprimerEudiant.php"
+              class="btn-delete">Delete Student</a> -->
+                <br><br><br>
+              <!-- <img src="stat.png" alt="Description de l'image" width="50%" height="40%">                  -->
+              
+                
+            
+
+    <script src="script.js"></script>
+</body>
+</html>

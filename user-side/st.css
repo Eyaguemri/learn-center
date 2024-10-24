@@ -1,0 +1,47 @@
+.actions {
+    text-align: center;
+    
+  }
+  
+  .btn-edit, .btn-delete {
+    display: inline-block;
+    padding: 3px 12px;
+    border: none;
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #519126; /* Couleur de fond pour le bouton "Modifier" */
+    color: #fff; /* Couleur du texte pour le bouton "Modifier" */
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  .btn-delete {
+    background-color: #f44336; /* Couleur de fond pour le bouton "Supprimer" */
+  }
+  .btn-edt {
+    display: inline-block;
+    padding: 3px 12px;
+    border: none;
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #519126; /* Couleur de fond pour le bouton "Modifier" */
+    color: #fff; /* Couleur du texte pour le bouton "Modifier" */
+    cursor: pointer;
+    
+    
+    
+    
+            position: absolute; /* position absolue */
+            right: 0; 
+            left: -2;/* positionné tout à gauche */
+        
+            
+            transform: translateY(30%); /* centrer verticalement avec translate */
+      
+  }
